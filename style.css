@@ -3,3 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.field{
+    width: 80vw;
+    margin: 0 auto;
+    height: 80vh;
+    background: url(images/cricket-crowd.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.bat,.ball{
+    position: relative;
+    top: 110px;
+    left: 200px;
+}
+.bat{
+    width: 100px;
+    transform: rotate(30deg);
+    
+    transform-origin: top;
+    transition: transform .5s ease-in;
+}
+.ball{
+    width: 40px;
+    transform: translate(130px, -105px);
+    transition: transform 1s .5s;
+}
+.field:hover .bat{
+    transform: rotate(-35deg);
+    transform-origin: top;
+}
+.field:hover .ball{
+    transform: translate(1200px, -250px);
+}
+
+h2,h3{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    margin-top: 30px;
+    color: tomato;
+}
+h3{
+    font-size: 25px;
+}
